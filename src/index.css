@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -57,6 +57,8 @@
   body {
     @apply bg-background text-foreground font-body;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -131,7 +133,7 @@
   }
 
   .top-locations-bar {
-    @apply bg-primary py-1.5;
+    @apply bg-gradient-to-r from-primary-blue-900 to-primary-blue-700 py-1.5;
   }
 
   .locations-list {
@@ -144,6 +146,37 @@
 
   .locations-list a {
     @apply text-white text-sm no-underline transition-colors duration-300 hover:text-accent;
+  }
+
+  /* Premium Elevation System */
+  .elevation-1 {
+    @apply shadow-[0_2px_5px_rgba(0,0,0,0.05),0_1px_2px_rgba(0,0,0,0.07)];
+  }
+
+  .elevation-2 {
+    @apply shadow-[0_4px_10px_rgba(0,0,0,0.05),0_2px_4px_rgba(0,0,0,0.07)];
+  }
+
+  .elevation-3 {
+    @apply shadow-[0_8px_20px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.07)];
+  }
+
+  /* Premium inputs */
+  .input-premium {
+    @apply w-full px-4 py-3 border border-neutral-200 rounded-lg font-body text-base transition-all duration-300 focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20;
+  }
+
+  /* Premium badge */
+  .badge-premium {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wide;
+  }
+
+  .badge-blue {
+    @apply bg-primary-blue-50 text-primary-blue-700;
+  }
+
+  .badge-yellow {
+    @apply bg-yellow-100 text-yellow-700;
   }
 
   @media (max-width: 768px) {
@@ -170,5 +203,27 @@
 @layer utilities {
   .hero-gradient {
     @apply bg-[linear-gradient(rgba(11,60,93,0.8),rgba(11,60,93,0.6))];
+  }
+  
+  /* Premium utility classes */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-blue-800 to-primary-blue-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-yellow {
+    @apply bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent;
+  }
+
+  /* Refined animations */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .hover-scale {
+    @apply transition-all duration-300 hover:scale-105;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_15px_rgba(50,140,193,0.5)];
   }
 }

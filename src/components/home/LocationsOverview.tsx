@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SectionHeading from '../ui-custom/SectionHeading';
 import LocationCard from '../ui-custom/LocationCard';
+import { MapPin } from 'lucide-react';
 
 const locations = [
   {
@@ -33,10 +34,14 @@ const locations = [
 
 const LocationsOverview = () => {
   return (
-    <section className="section-padding">
-      <div className="container mx-auto px-4">
+    <section className="section-padding bg-white relative">
+      {/* Decorative elements */}
+      <div className="absolute right-0 top-20 w-32 h-64 bg-primary-blue-50 rounded-l-full opacity-30"></div>
+      <div className="absolute left-0 bottom-20 w-48 h-48 bg-yellow-50 rounded-r-full opacity-40"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <SectionHeading 
-          title="Our Locations" 
+          title={<>Our <span className="text-gradient">Locations</span></>}
           subtitle="Visit one of our six convenient locations across Connecticut."
         />
         
@@ -55,8 +60,15 @@ const LocationsOverview = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link to="/locations" className="btn-primary">
+          <Link 
+            to="/locations" 
+            className="group bg-transparent border-2 border-primary-blue-800 text-primary-blue-800 hover:bg-primary-blue-800 hover:text-white px-7 py-3 rounded-lg font-medium inline-flex items-center transition-all duration-300"
+          >
+            <MapPin className="mr-2 h-5 w-5" />
             View All Locations
+            <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
           </Link>
         </div>
       </div>
