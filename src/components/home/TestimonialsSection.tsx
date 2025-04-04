@@ -8,42 +8,42 @@ const testimonials = [
   {
     name: 'John Smith',
     location: 'Torrington',
-    text: 'I've been going to Quiet Zone for all my automotive needs for over 5 years. They're always honest, fair with pricing, and do excellent work. Wouldn't trust my car with anyone else!',
+    text: "I've been going to Quiet Zone for all my automotive needs for over 5 years. They're always honest, fair with pricing, and do excellent work. Wouldn't trust my car with anyone else!",
     rating: 5,
     date: 'June 15, 2023'
   },
   {
     name: 'Sarah Johnson',
     location: 'Thomaston',
-    text: 'After being overcharged at the dealership for years, I started going to Quiet Zone and couldn't be happier. They explained exactly what my car needed and what it didn't. Saved me hundreds!',
+    text: "After being overcharged at the dealership for years, I started going to Quiet Zone and couldn't be happier. They explained exactly what my car needed and what it didn't. Saved me hundreds!",
     rating: 5,
     date: 'August 3, 2023'
   },
   {
     name: 'Michael Brown',
     location: 'Watertown',
-    text: 'Quick service, fair prices, and friendly staff. They fixed my AC system when two other shops couldn't figure out the problem. These guys know what they're doing.',
+    text: "Quick service, fair prices, and friendly staff. They fixed my AC system when two other shops couldn't figure out the problem. These guys know what they're doing.",
     rating: 5,
     date: 'July 22, 2023'
   },
   {
     name: 'Jennifer Wilson',
     location: 'Bantam',
-    text: 'As a woman, I've often felt taken advantage of at auto shops. Not at Quiet Zone! They treated me with respect, explained everything clearly, and didn't try to upsell unnecessary services.',
+    text: "As a woman, I've often felt taken advantage of at auto shops. Not at Quiet Zone! They treated me with respect, explained everything clearly, and didn't try to upsell unnecessary services.",
     rating: 5,
     date: 'May 9, 2023'
   },
   {
     name: 'Robert Garcia',
     location: 'Naugatuck',
-    text: 'My check engine light came on during a road trip. Quiet Zone got me in right away, diagnosed the problem quickly, and had me back on the road the same day. Excellent service!',
+    text: "My check engine light came on during a road trip. Quiet Zone got me in right away, diagnosed the problem quickly, and had me back on the road the same day. Excellent service!",
     rating: 4,
     date: 'September 11, 2023'
   },
   {
     name: 'Elizabeth Taylor',
     location: 'Orange',
-    text: 'I've been bringing my family's vehicles to Quiet Zone for over a decade. They're always professional, thorough, and stand behind their work. Highly recommend!',
+    text: "I've been bringing my family's vehicles to Quiet Zone for over a decade. They're always professional, thorough, and stand behind their work. Highly recommend!",
     rating: 5,
     date: 'April 18, 2023'
   }
