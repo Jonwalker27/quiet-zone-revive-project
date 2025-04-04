@@ -2,7 +2,7 @@
 import React from 'react';
 
 interface SectionHeadingProps {
-  title: string;
+  title: React.ReactNode; // Changed from string to ReactNode to accept JSX elements
   subtitle?: string;
   center?: boolean;
 }
